@@ -1,7 +1,7 @@
 {
   "name": "make-color-more-chill-test",
   "author": "Michael Demarais",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "license": "MIT",
   "type": "module",
   "module": "dist/make-color-more-chill-test.esm.js",
