@@ -1,10 +1,13 @@
 {
-  "name": "make-color-more-chill",
+  "name": "make-color-more-chill-test",
   "author": "Michael Demarais",
-  "module": "dist/make-color-more-chill.esm.js",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
-  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/make-color-more-chill.esm.js",
+  "exports": {
+    ".": "./dist/make-color-more-chill.esm.js"
+  },
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -15,10 +18,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build --format esm",
     "test": "tsdx test",
     "lint": "tsdx lint src --fix",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
