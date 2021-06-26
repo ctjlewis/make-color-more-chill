@@ -1,5 +1,5 @@
 import c from 'chroma-js';
-import * as z from 'zod';
+import { z } from 'zod';
 
 // the chillThreshold is the minimum acceptable contrast ratio for a given color
 // against white, as eyeballed by @christianbaroni and @mikedemarais 👁️
