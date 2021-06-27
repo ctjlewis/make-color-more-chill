@@ -4,6 +4,7 @@
   "version": "0.2.6",
   "license": "MIT",
   "type": "module",
+  "main": "dist/index.js",
   "module": "dist/make-color-more-chill-test.esm.js",
   "exports": {
     ".": "./dist/make-color-more-chill-test.esm.js"
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build --format esm",
+    "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint src --fix",
     "prepare": "yarn build",
