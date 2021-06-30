@@ -1,13 +1,14 @@
 {
   "name": "make-color-more-chill-test",
   "author": "Michael Demarais",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/make-color-more-chill-test.esm.js",
   "exports": {
-    ".": "./dist/make-color-more-chill-test.esm.js"
+    ".": "./dist/make-color-more-chill-test.esm.js",
+    "./package.json": "./package.json"
   },
   "typings": "dist/index.d.ts",
   "files": [
