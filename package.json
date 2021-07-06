@@ -1,14 +1,13 @@
 {
   "name": "make-color-more-chill-test",
   "author": "Michael Demarais",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/make-color-more-chill-test.esm.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "exports": {
-    ".": "./dist/make-color-more-chill-test.esm.js",
-    "./package.json": "./package.json"
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
   },
   "typings": "dist/index.d.ts",
   "files": [
@@ -19,10 +18,10 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test",
-    "lint": "tsdx lint src --fix",
+    "start": "tsdx-esm watch",
+    "build": "tsdx-esm build",
+    "test": "tsdx-esm test",
+    "lint": "tsdx-esm lint src --fix",
     "prepare": "yarn build",
     "size": "size-limit",
     "analyze": "size-limit --why"
@@ -30,7 +29,7 @@
   "peerDependencies": {},
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx-esm lint"
     }
   },
   "prettier": {
