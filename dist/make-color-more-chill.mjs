@@ -43,4 +43,4 @@ function makeColorMoreChill(color, background = white) {
 
 export default makeColorMoreChill;
 export { Theme, black, fallbackColors, isBlackOrWhite, isChill, white };
-//# sourceMappingURL=make-color-more-chill-test.mjs.map
+//# sourceMappingURL=make-color-more-chill.mjs.map

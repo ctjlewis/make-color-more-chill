@@ -56,4 +56,4 @@ exports.fallbackColors = fallbackColors;
 exports.isBlackOrWhite = isBlackOrWhite;
 exports.isChill = isChill;
 exports.white = white;
-//# sourceMappingURL=make-color-more-chill-test.development.cjs.map
+//# sourceMappingURL=make-color-more-chill.development.cjs.map
