@@ -54,11 +54,11 @@
     "husky": "^4.3.0",
     "size-limit": "^4.9.0",
     "tsdx": "ctjlewis/tsdx",
-    "tslib": "^2.0.3",
+    "tslib": "^2.3.0",
     "typescript": "^4.2.4"
   },
   "dependencies": {
     "chroma-js": "^2.1.0",
-    "zod": "3.1.0"
+    "zod": "3.5.1"
   }
 }
