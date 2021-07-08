@@ -15,12 +15,13 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
+    "posttest": "node test/import.mjs && node test/require.cjs",
     "lint": "tsdx lint src --fix",
     "prepare": "yarn build",
     "size": "size-limit",
